@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Zásady ochrany osobných údajov – Bodovačka</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 19px; margin-top: 36px; color: #1b3a34; }
+  p, li { font-size: 16px; }
+  a { color: #1b7a6f; }
+  code { background: #f2f2f2; padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Zásady ochrany osobných údajov – Bodovačka</h1>
+<p class="updated">Platné od: 20.10.2026</p>
+
+<p>Aplikácia <strong>Bodovačka</strong> (vývojár: Anton Pánis / TonoSoft) rešpektuje vaše súkromie. Tento dokument vysvetľuje, aké údaje aplikácia spracúva a prečo.</p>
+
+<h2>1. Aké údaje aplikácia spracúva</h2>
+<p>Aplikácia spracúva nasledujúce údaje výhradne lokálne na vašom zariadení:</p>
+<ul>
+  <li>Mená, priezviská a kategórie strelcov, ktoré zadáte ručne alebo naskenujete pomocou QR kódu</li>
+  <li>Zaznamenané výsledky (body, zásahy, doplnkové údaje o teréne)</li>
+  <li>Nastavenia aplikácie (jazyk, zvukové nastavenia, bodové hodnoty a pod.)</li>
+</ul>
+<p>Tieto údaje zostávajú uložené len vo vnútornej pamäti vášho zariadenia, prípadne v PDF súboroch, ktoré si sami uložíte. Výnimkou je funkcia popísaná nižšie.</p>
+
+<h2>Funkcia „Rýchle predplnenie strelcov“</h2>
+<p>Ak použijete voliteľnú funkciu vyhľadania strelca podľa čísla licencie, aplikácia odošle zadané číslo licencie na webovú stránku <a href="https://archery3d.sk" target="_blank" rel="noopener">archery3d.sk</a> (verejný register Slovenskej lukostreleckej asociácie) a stiahne verejne dostupné údaje o strelcovi (meno, kategória, divízia). Táto funkcia je voliteľná – strelca môžete vždy pridať aj ručne bez jej použitia. Spojenie prebieha cez zabezpečené HTTPS pripojenie. Vývojár aplikácie neukladá ani neprotokoluje čísla licencií na vlastných serveroch – požiadavka smeruje priamo na archery3d.sk.</p>
+
+<h2>2. Oprávnenia, ktoré aplikácia vyžaduje</h2>
+<ul>
+  <li><strong>Fotoaparát (CAMERA):</strong> používa sa výhradne na skenovanie QR kódov strelcov. Aplikácia neukladá ani neodosiela fotografie ani video.</li>
+  <li><strong>Úložisko / fotografie (READ/WRITE_EXTERNAL_STORAGE, READ_MEDIA_IMAGES):</strong> používa sa na export výsledkov do PDF a na export/import zoznamu strelcov medzi zariadeniami.</li>
+  <li><strong>Internet a stav siete (INTERNET, ACCESS_NETWORK_STATE):</strong> používa sa na kontrolu dostupnosti novšej verzie aplikácie (<code>epirus-strings.sk</code>) a na voliteľné vyhľadanie strelca podľa čísla licencie (<code>archery3d.sk</code>). Pri kontrole verzie sa neodosielajú žiadne osobné údaje.</li>
+  <li><strong>Vibrácie (VIBRATE):</strong> používa sa ako spätná väzba pri úspešnom naskenovaní QR kódu.</li>
+</ul>
+
+<h2>3. Zdieľanie údajov</h2>
+<p>Aplikácia nezdieľa žiadne údaje s tretími stranami na reklamné ani analytické účely. Neobsahuje reklamy ani sledovacie SDK. Jedinou výnimkou je vyššie popísaná voliteľná funkcia vyhľadania strelca, pri ktorej sa číslo licencie odosiela na archery3d.sk.</p>
+
+<h2>4. Uchovávanie a vymazanie údajov</h2>
+<p>Všetky údaje zostávajú na zariadení používateľa, pokiaľ ich sám neexportuje (PDF, export zoznamu strelcov). Odinštalovaním aplikácie sa všetky lokálne uložené údaje natrvalo odstránia.</p>
+
+<h2>5. Deti</h2>
+<p>Aplikácia nie je cielená na deti a vedome nezbiera údaje od detí mladších ako 13 rokov.</p>
+
+<h2>6. Kontakt</h2>
+<p>Pri otázkach ohľadom ochrany súkromia kontaktujte: <a href="mailto:anton.panis@softec.sk">anton.panis@softec.sk</a></p>
+
+</body>
+</html>
